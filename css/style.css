@@ -131,8 +131,8 @@ img{
     margin-top: .75rem;
     width: 100% ;
 }
-li{
-    width: 100%
+.social-links li a{
+    padding: 18px 90px;
 }
 
 .user-img {
