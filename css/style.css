@@ -1,0 +1,139 @@
+/*********************** || FONTS || ****************************/
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/***** || VARIABLES || *****/
+:root{
+
+    /* COLORS*/
+    --GREEN: #c5f82a;
+
+    --WHITE: #ffffff;
+
+    --GREY-700: #333333;
+    --GREY-800: #1f1f1f;
+    --GREY-900: #141414;
+
+    /*font*/
+    --FS-MAIN: 1rem;
+    --FS-HEADING: 1.75rem;
+    --FF-MAIN: 'Outfit', sans-serif;
+
+    --FS-BODY:.875rem;
+    --FS-HEADING:1.75rem;
+
+    --FW-400: 400;
+    --FW-500: 500;
+    --FW-600: 600;
+    --FW-700: 700;
+}
+
+/*********************** || RESET || ****************************/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    line-height: 1.1;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--WHITE);
+}
+
+body{
+    background-color: var(--GREY-900);
+    font-family: var(--FF-MAIN);
+    font-weight: var(--FW-400);
+    font-size: var(--FS-BODY);
+    color: var(--WHITE);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+img{
+    display: block;
+    max-width: 40%;
+    height: auto;
+    color: var(--GREEN);
+    font-style: italic;
+    
+    margin-inline: auto;
+}
+
+/*********************** || TEXT STYLES || ****************************/
+
+.username{
+    font-size: var(--FS-HEADING);
+    font-weight: var(--FW-600);
+    margin-bottom: .5rem;
+}
+
+.user-location {
+    color: var(--GREEN);
+    font-weight: var(--FW-600);
+    margin-bottom: 1.5rem;
+}
+
+.user-description {
+    margin-bottom: 1rem;
+}
+
+.list-item{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1.3rem;
+    background-color: var(--GREY-700);
+    border-radius: .7rem;
+    text-align: center;
+    margin-bottom: 1.25em;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .2px ;
+}
+
+.list-item:hover {
+    background-color: var(--GREEN);
+    color: var(--GREY-900);
+    transition: background .7s ease , color .7s ease-in-out;
+}
+/*********************** || LAYOUT STYLES || ****************************/
+.wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    
+    
+}
+
+.profile-container {
+    display: grid;
+    place-items: center;
+    width: 30em;
+    background-color: var(--GREY-800);
+    padding: 1.75rem;
+    border-radius: .8rem;
+}
+
+.social-links  * + * {  /* selecting all chilren except for the first*/
+    margin-top: .75rem;
+}
+
+.user-img {
+    border-radius: 50%;
+    max-width: 35%;
+    margin-bottom: 2.3rem;
+}
+
