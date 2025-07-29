@@ -130,6 +130,9 @@ img{
 .social-links  * + * {  /* selecting all chilren except for the first*/
     margin-top: .75rem;
 }
+li{
+    width: 100%
+}
 
 .user-img {
     border-radius: 50%;
