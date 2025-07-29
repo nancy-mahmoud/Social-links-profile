@@ -129,6 +129,7 @@ img{
 
 .social-links  * + * {  /* selecting all chilren except for the first*/
     margin-top: .75rem;
+    width: 100% ;
 }
 li{
     width: 100%
